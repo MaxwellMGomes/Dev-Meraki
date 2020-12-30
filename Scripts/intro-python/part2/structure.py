@@ -8,7 +8,7 @@ import sys
 
 
 # Module Constants
-START_MESSAGE = "CLI Inspection Script"
+START_MESSAGE = "Script de Inspencao do CLI"
 
 
 # Module "Global" Variables

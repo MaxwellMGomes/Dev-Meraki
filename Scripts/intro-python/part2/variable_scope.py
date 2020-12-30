@@ -15,15 +15,34 @@ def my_function(argument_variable):
     print(module_variable, "...and I can be accessed inside a function.")
     print(argument_variable, "...and I can be passed to a function.")
     print(local_variable, "...and I can ONLY be accessed inside a function.")
-
+    retorno = "Variavel de retorno"
+    return retorno
 
 # Call the function; supplying the value for the argument variable
-my_function(argument_variable="I am a argument variable.")
+a = my_function(argument_variable="I am a argument variable.")
 
 
 # Let's try accessing that local variable here at module scope
 print("\nTrying to access local_variable outside of its function...")
 try:
     print(local_variable)
+except NameError as error:
+    print(error)
+try:
+    print(argument_variable)
+except NameError as error:
+    print(error)
+try:
+    print(module_variable)
+except NameError as error:
+    print(error)
+
+try:
+    print(retorno)
+except NameError as error:
+    print(error)
+
+try:
+    print(a)
 except NameError as error:
     print(error)
